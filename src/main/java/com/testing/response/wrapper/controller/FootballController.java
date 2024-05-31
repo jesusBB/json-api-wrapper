@@ -2,6 +2,7 @@ package com.testing.response.wrapper.controller;
 
 import com.testing.response.wrapper.dto.output.response.PlayerStatsItem;
 import com.testing.response.wrapper.dto.output.response.TeamStatsItem;
+import com.testing.response.wrapper.dto.output.response.TeamStatsItemRecord;
 import com.testing.response.wrapper.service.FootballService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -57,14 +58,14 @@ public class FootballController {
           description = "Returns details of a random team",
           content = @Content(
               schema = @Schema(
-                  implementation = TeamStatsItem.class
+                  implementation = TeamStatsItemRecord.class
               )
           )
       ),
   })
   @GetMapping(value = "/teams")
-  public ResponseEntity<TeamStatsItem> getTeamStats() {
-    return ResponseEntity.ok(footballService.getTeamStats());
+  public ResponseEntity<TeamStatsItemRecord> getTeamStats() {
+    return ResponseEntity.ok(footballService.getTeamStatsRecord());
   }
 
 

@@ -4,6 +4,7 @@ package com.testing.response.wrapper.service;
 import com.testing.response.wrapper.client.FootballClient;
 import com.testing.response.wrapper.dto.output.response.PlayerStatsItem;
 import com.testing.response.wrapper.dto.output.response.TeamStatsItem;
+import com.testing.response.wrapper.dto.output.response.TeamStatsItemRecord;
 import com.testing.response.wrapper.mapper.RequestMapper;
 import com.testing.response.wrapper.mapper.ResponseMapper;
 import lombok.extern.slf4j.Slf4j;
@@ -35,9 +36,9 @@ public class FootballService {
     return responseMapper.mapTeamStats(footballClient.teamStats());
   }
 
-  /*public TeamStatsItemRecord getTeamStatsRecord() {
+  public TeamStatsItemRecord getTeamStatsRecord() {
     return responseMapper.mapTeamStatsRecord(footballClient.teamStats());
-  }*/
+  }
 
 
   public TeamStatsItem getTeamStats(String teamId) {

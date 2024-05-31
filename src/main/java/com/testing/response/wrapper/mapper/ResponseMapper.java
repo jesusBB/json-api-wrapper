@@ -28,7 +28,7 @@ public class ResponseMapper {
         .build();
   }
 
-  /*
+
   public TeamStatsItemRecord mapTeamStatsRecord(
     FootballResponseWrapper<FootballTeamStatsItem> teamStats) {
     return TeamStatsItemRecord.builder().name(teamStats.getResult().getName())
@@ -36,6 +36,6 @@ public class ResponseMapper {
         .goalsFavour(teamStats.getResult().getGoalsFavour())
         .build();
   }
-*/
+
 }
 

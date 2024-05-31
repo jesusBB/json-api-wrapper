@@ -1,0 +1,12 @@
+{
+  "result": {
+    "possession": 25,
+    "name": "Cadiz CF",
+    "goals_favour": 0,
+    "goals_against": 3
+  },
+  "status": 200,
+  "message": "OK",
+  "requestId": "request-player-stats-45",
+  "timeGenerated": "2024-02-08 14:16:27"
+}

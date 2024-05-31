@@ -1,0 +1,11 @@
+{
+  "result": {
+    "min_player": 75,
+    "name": "Fali",
+    "shots_on_target": 3
+  },
+  "status": 200,
+  "message": "OK",
+  "requestId": "request-player-stats-45",
+  "timeGenerated": "2024-02-08 14:16:27"
+}

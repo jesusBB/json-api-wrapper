@@ -1,0 +1,17 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: testing-response-wrapper
+
+logging:
+  level:
+    com.testing.response.wrapper: DEBUG
+
+football:
+  base-url: ${FOOTBALL_URL:http://localhost:8081}
+
+feign:
+  httpclient:
+    enabled: true
